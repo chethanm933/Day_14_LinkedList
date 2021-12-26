@@ -13,17 +13,22 @@ public class LinkedList {
 		intLinkedList.add(mySecondNode);
 		intLinkedList.add(myThirdNode);
 	
+		System.out.println("Nodes avaliable after adding :");
 		intLinkedList.printMyNodes();
 		
 		
-		System.out.println(intLinkedList.search(40));
+		System.out.println("searching for the node value of 40 :" +intLinkedList.search(40));
 		
 		INode<Integer> myFourthNode = new MyNode<Integer>(40);
-		
+		System.out.println("After adding for the fourth node value 40" );
 		intLinkedList.insert(30, myFourthNode);
 		
 		intLinkedList.printMyNodes(); 
 		
+		System.out.println("Removing the fourth Node "+intLinkedList.remove(40)); 
+		
+		intLinkedList.printMyNodes(); 
+
 		
 	}
 }

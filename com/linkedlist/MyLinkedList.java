@@ -54,6 +54,18 @@ public class MyLinkedList<K> {
 			return false;
 		}
 	
+	public boolean remove(K value) {
+		INode<K> tempNode = head;
+		while(tempNode != null) {
+			if(tempNode.getNext().getKey().equals(value) ) {
+				tempNode.setNext(tempNode.getNext().getNext());
+				return true;
+			}
+			tempNode = tempNode.getNext();
+		}
+		return false;
+	}
+	
 	 public void printMyNodes() {
 		 System.out.println("my nodes :"+head);
 	 }
