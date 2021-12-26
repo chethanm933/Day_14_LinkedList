@@ -29,6 +29,19 @@ public class MyLinkedList<K> {
 		return lastNode;
 	}
 		
+	public boolean search(INode<K> search) {
+		INode<K> tempNode = head;
+		while(tempNode != null) {
+		if(tempNode.getKey().equals(search.getKey())){
+			return true;
+		}
+		tempNode = tempNode.getNext();
+		}
+		return false;
+		
+	}
+	
+	
 	 public void printMyNodes() {
 		 System.out.println("my nodes :"+head);
 	 }

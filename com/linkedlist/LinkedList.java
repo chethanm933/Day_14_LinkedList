@@ -19,6 +19,12 @@ public class LinkedList {
 		System.out.println("Node"+lastNode+"is popped out from the linked list");
 		
 		intLinkedList.printMyNodes(); 
+		
+		System.out.println(intLinkedList.search(mySecondNode));
+		
+		
+		
+		
 	}
 }
 
