@@ -20,7 +20,7 @@ public class LinkedList {
 		
 		intLinkedList.printMyNodes(); 
 		
-		System.out.println(intLinkedList.search(mySecondNode));
+		System.out.println(intLinkedList.search(30));
 		
 		
 		

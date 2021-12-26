@@ -29,17 +29,18 @@ public class MyLinkedList<K> {
 		return lastNode;
 	}
 		
-	public boolean search(INode<K> search) {
+	public boolean search(K value) {
 		INode<K> tempNode = head;
 		while(tempNode != null) {
-		if(tempNode.getKey().equals(search.getKey())){
+		if(tempNode.getKey().equals(value)){
 			return true;
 		}
 		tempNode = tempNode.getNext();
 		}
 		return false;
-		
 	}
+	
+	
 	
 	
 	 public void printMyNodes() {
