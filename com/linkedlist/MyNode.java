@@ -2,7 +2,7 @@ package com.linkedlist;
 
 public class MyNode<K> implements INode<K> {
 
-	K key;
+	 K key;
 	INode<K> next;
 	
 	public MyNode(K key) {
@@ -36,9 +36,5 @@ public class MyNode<K> implements INode<K> {
 		
 		return builder.toString();
 	}
-	
-	
-	
-
  }
   

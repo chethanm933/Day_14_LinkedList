@@ -18,13 +18,15 @@ public class MyLinkedList<K> {
 			tail = newNode;
 		}
 	}
-	
-	INode<K> pop() { 
+	   
+	INode<K> popLast() { 
 		INode<K> tempNode = head;
-		head = head.getNext();
-//		tempNode.setNext(null);
-		return tempNode;
-		
+		while(tempNode.getNext().getNext() != null) {
+		tempNode = tempNode.getNext();
+		}
+		INode<K> lastNode = tempNode.getNext();
+		tempNode.setNext(null);
+		return lastNode;
 	}
 		
 	 public void printMyNodes() {
