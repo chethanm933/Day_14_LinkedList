@@ -40,8 +40,19 @@ public class MyLinkedList<K> {
 		return false;
 	}
 	
-	
-	
+	public boolean insert(K after, INode<K> newNode) {
+		INode<K> tempNode = head;
+		while(tempNode != null) {
+			if(tempNode.getKey().equals(after)) {
+				INode<K> insertNode = tempNode.getNext();
+				tempNode.setNext(newNode);
+				newNode.setNext(insertNode);
+				return true;
+			} 
+				tempNode= tempNode.getNext();
+			}
+			return false;
+		}
 	
 	 public void printMyNodes() {
 		 System.out.println("my nodes :"+head);

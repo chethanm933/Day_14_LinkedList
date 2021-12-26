@@ -15,14 +15,14 @@ public class LinkedList {
 	
 		intLinkedList.printMyNodes();
 		
-		INode<Integer> lastNode = intLinkedList.popLast();
-		System.out.println("Node"+lastNode+"is popped out from the linked list");
+		
+		System.out.println(intLinkedList.search(40));
+		
+		INode<Integer> myFourthNode = new MyNode<Integer>(40);
+		
+		intLinkedList.insert(30, myFourthNode);
 		
 		intLinkedList.printMyNodes(); 
-		
-		System.out.println(intLinkedList.search(30));
-		
-		
 		
 		
 	}
