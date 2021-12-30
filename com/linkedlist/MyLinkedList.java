@@ -66,7 +66,18 @@ public class MyLinkedList<K> {
 		return false;
 	}
 	
+	
+	public void sorting() {
+		INode<K> tempNode = head;
+		
+		while(tempNode.getNext() != null) {
+		}
+		 
+	}
+	
 	 public void printMyNodes() {
 		 System.out.println("my nodes :"+head);
+		 
+		 
 	 }
 } 

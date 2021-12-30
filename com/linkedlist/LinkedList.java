@@ -29,6 +29,9 @@ public class LinkedList {
 		
 		intLinkedList.printMyNodes(); 
 
+		intLinkedList.insert(30, myFourthNode);
+		
+		intLinkedList.printMyNodes(); 
 		
 	}
 }
